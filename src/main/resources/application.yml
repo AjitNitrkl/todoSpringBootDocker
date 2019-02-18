@@ -3,22 +3,11 @@ spring:
  data:
   mongodb:
    uri: mongodb://localhost:27017/foo
- kafka:
-  consumer:
-   group-id: tpd-loggers
-   auto-offset-reset: earliest
-   # change this property if you are using your own
-   # Kafka cluster or your Docker IP is different
-   bootstrap-servers: localhost:9092
-   key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-   value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-  producer:
-   bootstrap-servers: localhost:9092
-   key-serializer: org.apache.kafka.common.serialization.StringSerializer
-   value-serializer: org.apache.kafka.common.serialization.StringSerializer 
- 
-tpd:
- topic-name: user
- messages-per-request: 10
-server:
- port: 8085 
+   
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+
+app:
+  topic:
+    example: example.t
