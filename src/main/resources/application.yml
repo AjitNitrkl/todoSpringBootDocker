@@ -1,13 +1,5 @@
-
 spring:
  data:
   mongodb:
-   uri: mongodb://localhost:27017/foo
-   
-spring:
-  kafka:
-    bootstrap-servers: localhost:9092
-
-app:
-  topic:
-    example: example.t
+   uri: mongodb://user:user@mongodb/sampledb
+ 
