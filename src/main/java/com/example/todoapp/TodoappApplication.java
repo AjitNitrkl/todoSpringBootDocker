@@ -39,10 +39,6 @@ public class TodoappApplication {
 		SpringApplication.run(TodoappApplication.class, args);
 	}
 	
-	
-	 @Value("${spring.kafka.bootstrap-servers}")
-	    private String bootstrapServers;
-	 
 	@Bean
     public MongoTemplate mongoTemplate(MongoDbFactory mongoDbFactory,
                                        MongoMappingContext context) {
@@ -56,6 +52,12 @@ public class TodoappApplication {
         return mongoTemplate;
 
     }
+	
+	
+	/*@Value("${spring.kafka.bootstrap-servers}")
+    private String bootstrapServers;
+	 
+	
 	
 	
 	
@@ -118,5 +120,5 @@ public class TodoappApplication {
         executor.setThreadNamePrefix("AsynchThread-");
         executor.initialize();
         return executor;
-    }
+    }*/
 }

@@ -19,7 +19,7 @@ import com.example.todoapp.service.KafkaService;
 
 import lombok.RequiredArgsConstructor;
 
-@RestController
+//@RestController
 @RequestMapping(value = "/kafka")
 @CrossOrigin("*")
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))

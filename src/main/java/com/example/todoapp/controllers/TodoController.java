@@ -10,12 +10,18 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/todoapi")
 @CrossOrigin("*")
 public class TodoController {
 
     @Autowired
     TodoRepository todoRepository;
+    
+    @RequestMapping("/")
+	String home() {
+		return "Hello todoapi!";
+	}
+    
 
     @GetMapping("/todos")
     public List<Todo> getAllTodos() {

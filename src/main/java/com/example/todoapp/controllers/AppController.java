@@ -45,6 +45,12 @@ public class AppController {
 	 private final PatientCustomRepository patientCustomRepo;
 	 
 	 private final TodoService todoService;
+	 
+	 @RequestMapping("/")
+		String home() {
+			return "Hello api!";
+		}
+	    
 	
 	  @PostMapping("/patient")
 	  public @Valid Patient addPatient(@Valid @RequestBody Patient patient) {

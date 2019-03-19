@@ -2,4 +2,8 @@ spring:
  data:
   mongodb:
    uri: mongodb://user:user@mongodb/sampledb
+   
+#mongodb://localhost:27017/foo
+   
+#mongodb://user:user@mongodb/sampledb
  

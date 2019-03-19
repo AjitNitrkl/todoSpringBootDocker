@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.todoapp.models.User;
 
-@Service
+//@Service
 public class KafkaProducer {
 
     private static final Logger logger = LoggerFactory.getLogger(KafkaProducer.class);

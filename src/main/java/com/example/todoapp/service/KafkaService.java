@@ -12,7 +12,7 @@ import com.example.todoapp.models.User;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
-@Service
+//@Service
 public class KafkaService {
 	
 	 private final KafkaProducer producer;

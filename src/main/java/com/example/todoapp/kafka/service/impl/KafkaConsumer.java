@@ -8,7 +8,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 import com.example.todoapp.models.User;
 
-@Service
+//@Service
 public class KafkaConsumer {
 
     private final Logger logger = LoggerFactory.getLogger(KafkaProducer.class);
